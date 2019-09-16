@@ -1,0 +1,22 @@
+body {
+    background-color: pink;
+  }
+  
+  .container-fluid {
+    background-color: blue;
+  }
+  
+  .my-planner {
+    color: yellow;
+    text-align: center;
+  }
+  
+  .container {
+    color: white;
+    width: 970px;
+  }
+  
+  .row {
+    border-style: dashed;
+  }
+  

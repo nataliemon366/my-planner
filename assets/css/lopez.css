@@ -1,22 +1,27 @@
 body {
-    background-color: pink;
+    background-color: white;
   }
   
   .container-fluid {
-    background-color: blue;
+    background-color: grey;
   }
   
   .my-planner {
-    color: yellow;
+    color: white;
     text-align: center;
   }
   
   .container {
-    color: white;
-    width: 970px;
+    color: red;
+    max-width: 1250px;
   }
   
   .row {
-    border-style: dashed;
+    border-style: solid;
+    padding-bottom: 230px;
+    text-align: center;
   }
-  
+
+  #qt {
+      maring
+  }

@@ -53,6 +53,6 @@ function render(result) {
   pTag.append(span);
 
   div.append(city, image, pTag, pTagHumid);
-  $("body").prepend(div);
+  $("#sams-weather-report").prepend(div);
 }
 

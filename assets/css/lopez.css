@@ -1,22 +1,71 @@
 body {
-    background-color: pink;
+    background-color: red;
   }
   
   .container-fluid {
-    background-color: blue;
+    background-color: black;
   }
   
   .my-planner {
-    color: yellow;
+    color: white;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   .container {
-    color: white;
-    width: 970px;
+    color: black;
+    max-width: 1250px;
   }
   
   .row {
-    border-style: dashed;
+    border-style: solid;
+    background-color: white;
+    padding-bottom: 150px;
+    text-align: center;
   }
   
+  #quoteOfTheDay {
+    color: purple;
+    margin-bottom: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  #motivateMe {
+    color: white;
+    height: 50px;
+    background-color: purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #motivateMe:hover {
+    background-color: white;
+    color: purple;
+    box-shadow: 0px 12px 16px 0px;
+}
+
+  #dailyNews {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  #toDo {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  #weatherReport {
+    color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  #myCalendar {
+    color: yellowgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  hr {
+    background-color: black;
+  }
+
+  #theCalendar {
+    
+  }

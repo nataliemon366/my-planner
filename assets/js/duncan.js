@@ -1,17 +1,17 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyCxPiSpKNz2b2nPMsGf4gvZKVtHZN8MN9Q",
-  authDomain: "to-do-list-db91b.firebaseapp.com",
-  databaseURL: "https://to-do-list-db91b.firebaseio.com",
-  projectId: "to-do-list-db91b",
-  storageBucket: "to-do-list-db91b.appspot.com",
-  messagingSenderId: "1011429005125",
-  appId: "1:1011429005125:web:f1949d6443fa497ac3102c"
-};
+// var firebaseConfig = {
+//   apiKey: "AIzaSyCxPiSpKNz2b2nPMsGf4gvZKVtHZN8MN9Q",
+//   authDomain: "to-do-list-db91b.firebaseapp.com",
+//   databaseURL: "https://to-do-list-db91b.firebaseio.com",
+//   projectId: "to-do-list-db91b",
+//   storageBucket: "to-do-list-db91b.appspot.com",
+//   messagingSenderId: "1011429005125",
+//   appId: "1:1011429005125:web:f1949d6443fa497ac3102c"
+// };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
-var db = firebase.firestore();
+// var db = firebase.firestore();
 
 // function render() {
 //   var form = $("<form id='todo-form'>");

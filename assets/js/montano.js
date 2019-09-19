@@ -11,10 +11,10 @@ $.ajax({
         articleGen(result)
     })
 function articleGen(data){
-
+    
     var $div = $("<div>").addClass(" text-dark")
     var randomIndexForArticle = Math.floor(Math.random() * data.totalResults )
-    var randomArticleToPick = [randomIndexForArticle % 15, (randomIndexForArticle+1) % 15, (randomIndexForArticle+2%15)]
+    var randomArticleToPick = [randomIndexForArticle % 8, (randomIndexForArticle+1) % 8, (randomIndexForArticle+2%8)]
     console.log(randomArticleToPick)
     for(var i = 0; i < 3; i++){
         randomIndexForArticle = Math.floor(Math.random(randomIndexForArticle) * data.totalResults )

@@ -9,6 +9,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>My Planner!</title>
     <link rel="stylesheet" href="./assets/css/lopez.css">
+    <style type="text/css">
+        #vt-line {
+            width: 1;
+            height: 500;
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,27 +25,252 @@
             <h1>My Planner!</h1>
         </div>
     </div>
-    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="w-100"></div>
+            <div class="col">
+                <div id="qt">
+                    <h4>Quote of the Day</h4>
+                </div>
+                <button id="button" type="button">
+                    <h5>Motivate Me</h5>
+                </button>
+            </div>
+            <div id="vt-line"></div>
+            <div class="col">
+                <h4>Daily News</h4>
+                <div class="newsArticlesDiv"></div>
+            </div>
         </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="./assets/js/lopez.js"></script>
+        <br>
+        <div class="row">
+            <div class="col">
+                <h4>To-Do</h4>
+            </div>
+            <div class="col">
+                <h4>Weather</h4>
+            </div>
+            <div class="col">
+                <h4>My Calender</h4>
+                <table border='1' bordercolor='#FFFF00' cellspacing='0' cellpadding='0' align="center">
+                    <tr>
+                        <td>
+                            <table cellspacing='0' cellpadding='0' align="center" width='100' border='1'>
+                                <tr>
+                                    <td align="center" bgcolor='#ffff00'>
+                                        <font size='3' face='Tahoma'> <a href='html_calendar.php?prm=09&chm=-1'
+                                                rel="nofollow">
+                                                <</a> </font> </td> <td colspan=5 align="center" bgcolor='#ffff00'>
+                                                    <font size='3' face='Tahoma'>Sep 2019 </font>
+                                    </td>
+                                    <td align="center" bgcolor='#ffff00'>
+                                        <font size='3' face='Tahoma'> <a href='html_calendar.php?prm=09&chm=1'
+                                                rel="nofollow">></a>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Sun</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Mon</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Tue</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Wed</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Thu</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Fri</b></font>
+                                    </td>
+                                    <td>
+                                        <font size='3' face='Tahoma'><b>Sat</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>1
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>2
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>3
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>4
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>5
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>6
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>7
+                                            <br>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>8
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>9
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>10
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>11
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>12
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>13
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>14
+                                            <br>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>15
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>16
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>17
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>18
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>19
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>20
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>21
+                                            <br>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>22
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>23
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>24
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>25
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>26
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>27
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>28
+                                            <br>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>29
+                                            <br>
+                                        </font>
+                                    </td>
+                                    <td valign=top>
+                                        <font size='2' face='Tahoma'>30
+                                            <br>
+                                        </font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                </div>
+            </div>
+        </div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+        <script src="./assets/js/lopez.js"></script>
+        <script src="./assets/js/montano.js"></script>
 
 </body>
 

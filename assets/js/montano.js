@@ -11,57 +11,65 @@ $.ajax({
         articleGen(result)
     })
 function articleGen(data){
-    var $div = $("<div>")
+
+    var $div = $("<div>").addClass(" text-dark")
+    var randomIndexForArticle = Math.floor(Math.random() * data.totalResults )
+    var randomArticleToPick = [randomIndexForArticle % 15, (randomIndexForArticle+1) % 15, (randomIndexForArticle+2%15)]
+    console.log(randomArticleToPick)
     for(var i = 0; i < 3; i++){
-        // created 3 spand for my main div
-        var $span = $("<span>")
-        var $authorForSpan = $("<h4>")
-        var $articleTitleForSpan = $("<h2>")
+        randomIndexForArticle = Math.floor(Math.random(randomIndexForArticle) * data.totalResults )
+        // created 3 span for my main div
+        var $span = $("<span>").addClass("card mt-3")
+        var $authorForSpan = $("<p>")
+        var $articleTitleForSpan = $("<p>")
+        var $aLink = $("<a>").attr("href", data.articles[randomArticleToPick[i]].url )
         //need to create a title for article and a author 
-        $authorForSpan.text(data.articles[i].author)
-        $articleTitleForSpan.text(data.articles[i].title)
+        $authorForSpan.text(data.articles[randomArticleToPick[i]].author)
+        $articleTitleForSpan.text(data.articles[randomArticleToPick[i]].title)
+        $aLink.text("click here")
         // insert data into html elements / jquery
-        $span.append($articleTitleForSpan, $authorForSpan);
+        $span.append($articleTitleForSpan, $authorForSpan, $aLink);
     // organizing my html or jquery 
         $div.append($span)
     }
     // organizing my html or jquery 
-    $("body").append($div)
+    $(".newsArticlesDiv").append($div)
 }
-function render(result) {
-    var $div = $("<div>");
-    // created 3 spand for my main div
-    var $span1 = $("<span>")
-    var $span2 = $("<span>")
-    var $span3 = $("<span>")
+// this is wordy code that isaac wrote.
+// function render(result) {
+//     var $div = $("<div>");
+//     // created 3 spand for my main div
+//     var $span1 = $("<span>")
+//     var $span2 = $("<span>")
+//     var $span3 = $("<span>")
 
-    //need to create a title for article and a author 
-    var $authorForSpan1 = $("<h4>")
-    var $authorForSpan2 = $("<h4>")
-    var $authorForSpan3 = $("<h4>")
+//     //need to create a title for article and a author 
+//     var $authorForSpan1 = $("<h4>")
+//     var $authorForSpan2 = $("<h4>")
+//     var $authorForSpan3 = $("<h4>")
 
-    var $articleTitleForSpan1 = $("<h2>")
-    var $articleTitleForSpan2 = $("<h2>")
-    var $articleTitleForSpan3 = $("<h2>")
+//     var $articleTitleForSpan1 = $("<h2>")
+//     var $articleTitleForSpan2 = $("<h2>")
+//     var $articleTitleForSpan3 = $("<h2>")
 
-    // insert data into html elements / jquery
-    $authorForSpan1.text(result.articles[7].author)
-    $articleTitleForSpan1.text(result.articles[7].title)
-    $authorForSpan2.text(result.articles[5].author)
-    $articleTitleForSpan2.text(result.articles[5].title)
-    $authorForSpan3.text(result.articles[2].author)
-    $articleTitleForSpan3.text(result.articles[2].title)
+//     // insert data into html elements / jquery
+//     $authorForSpan1.text(result.articles[7].author)
+//     $articleTitleForSpan1.text(result.articles[7].title)
+//     $authorForSpan2.text(result.articles[5].author)
+//     $articleTitleForSpan2.text(result.articles[5].title)
+//     $authorForSpan3.text(result.articles[2].author)
+//     $articleTitleForSpan3.text(result.articles[2].title)
 
-    // organizing my html or jquery 
-    $span1.append($articleTitleForSpan1, $authorForSpan1);
-    $span2.append($articleTitleForSpan2 ,$authorForSpan2);
-    $span3.append($articleTitleForSpan3 ,$authorForSpan3);
+//     // organizing my html or jquery 
+//     $span1.append($articleTitleForSpan1, $authorForSpan1);
+//     $span2.append($articleTitleForSpan2 ,$authorForSpan2);
+//     $span3.append($articleTitleForSpan3 ,$authorForSpan3);
 
-    $div.append($span1,$span2, $span3);
+//     $div.append($span1,$span2, $span3);
 
-    $ ("body").append($div); 
+//     $ ("body").append($div); 
  
-}
+// }
 
 
 

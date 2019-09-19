@@ -94,7 +94,9 @@ $(document).ready(function() {
   } 
   $("#quotes").text( randomQuotes(quotes))
  
-
+ $("#motivateMe").on('click', function(){
+  $("#quotes").text( randomQuotes(quotes))
+ })
 
 
 

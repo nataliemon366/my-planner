@@ -27,235 +27,145 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id="qt">
-                    <h4>Quote of the Day</h4>
+            <div class="row">
+              <div class="col">
+                <div id="quoteOfTheDay"><h4>Quote of the Day</h4>
+                <hr id="hr">
                 </div>
-                <button id="button" type="button">
-                    <h5>Motivate Me</h5>
-                </button>
+                <button type="button" id="motivateMe" type="button"><h5>Motivate Me!</h5></button>
+              </div>
+              <div id="vt-line"></div>
+              <div class="col">
+                <h4 id="dailyNews">Daily News</h4>
+                <hr>
+              </div>
             </div>
-            <div id="vt-line"></div>
-            <div class="col">
-                <h4>Daily News</h4>
-                <div class="newsArticlesDiv"></div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col">
-                <h4>To-Do</h4>
-            </div>
-            <div class="col">
-                <h4>Weather</h4>
-            </div>
-            <div class="col">
-                <h4>My Calender</h4>
-                <table border='1' bordercolor='#FFFF00' cellspacing='0' cellpadding='0' align="center">
-                    <tr>
-                        <td>
-                            <table cellspacing='0' cellpadding='0' align="center" width='100' border='1'>
-                                <tr>
-                                    <td align="center" bgcolor='#ffff00'>
-                                        <font size='3' face='Tahoma'> <a href='html_calendar.php?prm=09&chm=-1'
-                                                rel="nofollow">
-                                                <</a> </font> </td> <td colspan=5 align="center" bgcolor='#ffff00'>
-                                                    <font size='3' face='Tahoma'>Sep 2019 </font>
-                                    </td>
-                                    <td align="center" bgcolor='#ffff00'>
-                                        <font size='3' face='Tahoma'> <a href='html_calendar.php?prm=09&chm=1'
-                                                rel="nofollow">></a>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Sun</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Mon</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Tue</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Wed</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Thu</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Fri</b></font>
-                                    </td>
-                                    <td>
-                                        <font size='3' face='Tahoma'><b>Sat</b></font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>1
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>2
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>3
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>4
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>5
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>6
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>7
-                                            <br>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>8
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>9
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>10
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>11
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>12
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>13
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>14
-                                            <br>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>15
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>16
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>17
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>18
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>19
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>20
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>21
-                                            <br>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>22
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>23
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>24
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>25
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>26
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>27
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>28
-                                            <br>
-                                        </font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>29
-                                            <br>
-                                        </font>
-                                    </td>
-                                    <td valign=top>
-                                        <font size='2' face='Tahoma'>30
-                                            <br>
-                                        </font>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+            <br>
+            <div class="row">
+              <div class="col">
+                <h4 id="toDo">To-Do</h4>
+                <hr>
+              </div>
+              <div class="col">
+                <h4 id="weatherReport">Weather Report</h4>
+                <hr>
+              </div>
+              <div class="col">
+                <h4 id="myCalendar">My Calendar</h4>
+                <hr>
+                <center>
+                    <script language="javascript" type="text/javascript">
+                    var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+                    var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+                    
+                    //  DECLARE AND INITIALIZE VARIABLES
+                    var Calendar = new Date();
+                    
+                    var year = Calendar.getFullYear();     // Returns year
+                    var month = Calendar.getMonth();    // Returns month (0-11)
+                    var today = Calendar.getDate();    // Returns day (1-31)
+                    var weekday = Calendar.getDay();    // Returns day (1-31)
+                    
+                    var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+                    var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+                    var cal;    // Used for printing
+                    
+                    Calendar.setDate(1);    // Start the calendar day at '1'
+                    Calendar.setMonth(month);    // Start the calendar month at now
+                    
+                    
+                    /* VARIABLES FOR FORMATTING
+                    NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+                          tags to customize your caledanr's look. */
+                    
+                    var TR_start = '<TR>';
+                    var TR_end = '</TR>';
+                    var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+                    var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+                    var TD_start = '<TD WIDTH="30"><CENTER>';
+                    var TD_end = '</CENTER></TD>';
+                    
+                    /* BEGIN CODE FOR CALENDAR
+                    NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+                    tags to customize your calendar's look.*/
+                    
+                    cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+                    cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+                    cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+                    cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+                    cal += TR_start;
+                    
+                    //   DO NOT EDIT BELOW THIS POINT  //
+                    
+                    // LOOPS FOR EACH DAY OF WEEK
+                    for(index=0; index < DAYS_OF_WEEK; index++)
+                    {
+                    
+                    // BOLD TODAY'S DAY OF WEEK
+                    if(weekday == index)
+                    cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+                    
+                    // PRINTS DAY
+                    else
+                    cal += TD_start + day_of_week[index] + TD_end;
+                    }
+                    
+                    cal += TD_end + TR_end;
+                    cal += TR_start;
+                    
+                    // FILL IN BLANK GAPS UNTIL TODAY'S DAY
+                    for(index=0; index < Calendar.getDay(); index++)
+                    cal += TD_start + '  ' + TD_end;
+                    
+                    // LOOPS FOR EACH DAY IN CALENDAR
+                    for(index=0; index < DAYS_OF_MONTH; index++)
+                    {
+                    if( Calendar.getDate() > index )
+                    {
+                      // RETURNS THE NEXT DAY TO PRINT
+                      week_day =Calendar.getDay();
+                    
+                      // START NEW ROW FOR FIRST DAY OF WEEK
+                      if(week_day == 0)
+                      cal += TR_start;
+                    
+                      if(week_day != DAYS_OF_WEEK)
+                      {
+                    
+                      // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+                      var day  = Calendar.getDate();
+                    
+                      // HIGHLIGHT TODAY'S DATE
+                      if( today==Calendar.getDate() )
+                      cal += highlight_start + day + highlight_end + TD_end;
+                    
+                      // PRINTS DAY
+                      else
+                      cal += TD_start + day + TD_end;
+                      }
+                    
+                      // END ROW FOR LAST DAY OF WEEK
+                      if(week_day == DAYS_OF_WEEK)
+                      cal += TR_end;
+                      }
+                    
+                      // INCREMENTS UNTIL END OF THE MONTH
+                      Calendar.setDate(Calendar.getDate()+1);
+                    
+                    }// end for loop
+                    
+                    cal += '</TD></TR></TABLE></TABLE>';
+                    
+                    //  PRINT CALENDAR
+                    document.write(cal);
+                    
+                    //  End -->
+                    </script>
+                    </center>
+                    <br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none"></span></a></div>
+                            </td>
+                        </tr>
+                    </table>
                 <div>
                 </div>
             </div>

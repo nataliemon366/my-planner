@@ -20,7 +20,7 @@ body {
   .row {
     border-style: solid;
     background-color: white;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     text-align: center;
   }
   
@@ -67,5 +67,5 @@ body {
   }
 
   #theCalendar {
-    
+    font-size: 25px;
   }
